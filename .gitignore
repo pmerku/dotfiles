@@ -1,3 +1,4 @@
 oh-my-zsh/
 vim/vim
-vim/undodir/*
+vim/undodir/%*
+.netrwhist
