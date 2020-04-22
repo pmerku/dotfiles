@@ -122,9 +122,13 @@ setopt HIST_IGNORE_DUPS
 
 ## Miscellaneous Aliases
 alias make="make --no-print-directory"
-alias docker-pwd='docker run -it --rm --init -v "$PWD:/pwd" nloomans/codam sh -c "cd /pwd; bash"'
 alias la="ls -A"
 alias htop='sudo htop'
+
+## Docker Aliases
+alias cc-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/clang sh -c "cd /pwd; zsh"'
+alias py-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/python sh -c "cd /pwd; zsh"'
+alias cs-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/csharp sh -c "cd /pwd; zsh"'
 
 # Shell Functions
 # qfind - used to quickly find files that contain a string in a directory
