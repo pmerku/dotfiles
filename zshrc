@@ -124,6 +124,8 @@ setopt HIST_IGNORE_DUPS
 alias make="make --no-print-directory"
 alias la="ls -A"
 alias htop='sudo htop'
+alias minikube="/mnt/c/ProgramData/chocolatey/bin/minikube.exe $@"
+alias bat="batcat"
 
 ## Docker Aliases
 alias cc-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/clang sh -c "cd /pwd; zsh"'

@@ -28,6 +28,9 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set encoding=UTF-8
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 filetype off                  " required
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
