@@ -124,20 +124,7 @@ setopt HIST_IGNORE_DUPS
 alias make="make --no-print-directory"
 alias la="ls -A"
 alias htop='sudo htop'
-alias minikube="/mnt/c/ProgramData/chocolatey/bin/minikube.exe $@"
 alias bat="batcat"
-
-## Docker Aliases
-alias cc-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/clang sh -c "cd /pwd; zsh"'
-alias py-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/python sh -c "cd /pwd; zsh"'
-alias cs-pwd='docker run -it --rm --init -v "$PWD:/pwd" pmerku/csharp sh -c "cd /pwd; zsh"'
-
-# Shell Functions
-# qfind - used to quickly find files that contain a string in a directory
-qfind () {
-  find . -exec grep -l -s $1 {} \;
-  return 0
-}
 
 # Custom exports
 ## Set EDITOR to /usr/bin/vim if Vim is installed

@@ -72,4 +72,3 @@ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 # Install Vundle for vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-

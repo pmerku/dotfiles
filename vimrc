@@ -51,14 +51,10 @@ Plugin 'bronson/vim-crosshairs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'itchyny/lightline.vim'
 Plugin 'myusuf3/numbers.vim'
-Plugin 'ycm-core/youcompleteme'
 Plugin 'mbbill/undotree'
-Plugin 'jremmen/vim-ripgrep'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-utils/vim-man'
 Plugin 'lyuts/vim-rtags'
-Plugin 'rust-lang/rust.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -124,15 +120,6 @@ let NERDTreeMinimalUI = 1
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 
-" rip-grep
-if executable('rg')
-	let g:rg_derive_root='true'
-endif
-
-" ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-file -oc --exclude-standard']
-let g:ctrlp_use_caching = 0
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Custom Commands                                                        "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -155,8 +142,4 @@ nnoremap <silent> <Leader>nf :NERDTreeFind<CR>
 let g:netrw_browse_split = 2
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
-
-" YCM
-nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
-nnoremap <silent> <Leader>gf :YcmCompleter FixIt<CR>
 
